@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="700.0" prefWidth="850.0" styleClass="transaction_container" stylesheets="@../../Styles/Transactions.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.Controllers.Client.TransactionsController">
+   <children>
+      <Text layoutX="468.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trasactions" AnchorPane.leftAnchor="349.0" AnchorPane.rightAnchor="425.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Text>
+      <ListView fx:id="transactions_listview" layoutX="14.0" layoutY="106.0" prefHeight="640.0" prefWidth="830.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="100.0" />
+   </children>
 </AnchorPane>
